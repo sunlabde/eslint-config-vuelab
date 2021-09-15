@@ -88,16 +88,4 @@ module.exports = {
 			},
 		},
 	],
-
-	configs: {
-		vite: {
-			plugins: ["vuelab"],
-			extends: require.resolve('eslint-config-airbnb-base'),
-		},
-
-		'vue-cli': {
-			plugins: ["vuelab"],
-			extends: require.resolve('@vue/eslint-config-airbnb'),
-		}
-	}
 };
