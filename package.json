@@ -13,6 +13,9 @@
         "test": "",
         "release": "np"
     },
+    "files": [
+        "configs"
+    ],
     "author": "thomas.brunner@sunlab.de",
     "license": "ISC",
     "peerDependencies": {
