@@ -9,6 +9,11 @@
     "version": "0.0.6",
     "description": "",
     "main": "index.js",
+    "files": [
+        "index.js",
+        "vite.js",
+        "vue-cli.js"
+    ],
     "scripts": {
         "test": "",
         "release": "np"
