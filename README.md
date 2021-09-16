@@ -33,7 +33,7 @@ There are three configurations available
 ```js
 module.exports = {
   extends: [
-    '@sunlabde/eslint-config-vuelab/vue-cli',
+    '@sunlabde/eslint-config-vuelab/vue-cli', // Replace `vue-cli` with `vite` for the vite configuation
   ],
 };
 ```
