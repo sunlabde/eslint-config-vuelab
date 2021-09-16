@@ -1,4 +1,8 @@
-![alt text](https://github.com/sunlabde/eslint-config-vuelab/blob/master/logo.svg "@sunlabde/eslint-config-vuelab")
+<p align="center">
+  <a href="https://pinia.esm.dev" target="_blank" rel="noopener noreferrer">
+    <img width="380" src="https://github.com/sunlabde/eslint-config-vuelab/blob/master/logo.svg" alt="@sunlabde/eslint-config-vuelab">
+  </a>
+</p>
 
 # @sunlabde/eslint-config-vuelab
 
