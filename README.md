@@ -1,8 +1,10 @@
+![alt text](https://github.com/sunlabde/eslint-config-vuelab/blob/master/logo.svg "@sunlabde/eslint-config-vuelab")
+
 # @sunlabde/eslint-config-vuelab
 
 This package contains the custom eslint config used by the Sunlab UX Team. Under the hood it uses the airbnb rules with some custom additions. It should alongside with Vue 3 projects since it also includes the Vue eslint rules.
 
-## How to use
+## 🔧 How to use 
 ### Prequesit
 This package is only accessible privately over the GitHub package registry. Make sure you tell your npm client that `@sunlabde` points to `https://npm.pkg.github.com` as well as to provide a valid access token.
 
@@ -32,7 +34,7 @@ module.exports = {
 };
 ```
 
-## Contribute
+## 💡 Contribute
 If you want to add new rules we should follow in our Sunlab UX projects, feel free to add those rules to the config. To do so, you just have to apply your changes, commit them and run `npm run release`. Follow the instructions and it will then create a new version of this package.
 
 If you are unsure, always feel free to get in touch with me (thomas.brunner@sunlabn.de).

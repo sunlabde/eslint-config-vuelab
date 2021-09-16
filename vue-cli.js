@@ -1,6 +1,6 @@
 module.exports = {
-    extends: [
-        '@vue/airbnb',
-        './index.js'
-    ]
+	extends: [
+		'@vue/airbnb',
+		'./index.js'
+	]
 }
