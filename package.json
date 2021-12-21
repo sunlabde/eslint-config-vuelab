@@ -33,6 +33,6 @@
         "@vue/eslint-config-airbnb": "^5.3.0"
     },
     "devDependencies": {
-        "np": "^7.5.0"
+        "np": "^7.6.0"
     }
 }
