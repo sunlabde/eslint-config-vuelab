@@ -24,16 +24,14 @@ npm install @sunlabde/eslint-config-vuelab -D
 ```
 
 ## Extend your ESLint config
-There are three configurations available
-- `base` – Only default vue rules
-- `vue-cli` – Made for use with a Vue CLI project
-- `vite` – Made for use wite a Vue Vite project
+There is only one configuration available
+- `base` – Made for use with a Vue Vite project
 
 #### Example `.eslintrc.js`
 ```js
 module.exports = {
   extends: [
-    '@sunlabde/eslint-config-vuelab/vue-cli', // Replace `vue-cli` with `vite` for the vite configuation
+    '@sunlabde/vuelab',
   ],
 };
 ```
