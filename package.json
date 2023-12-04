@@ -36,7 +36,7 @@
     },
     "devDependencies": {
         "eslint": "^8.31.0",
-        "np": "^8.0.0",
+        "np": "^9.0.0",
         "typescript": "^5.0.0"
     },
     "engines": {
