@@ -1,14 +1,20 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
+import globals from "globals";
+import pluginVue from 'eslint-plugin-vue'
+import { defineFlatConfig } from 'eslint-define-config';
 
-module.exports = {
-	env: {
-		browser: true,
-		es2021: true,
-		node: true,
-		"vue/setup-compiler-macros": true,
-	},
+export default defineFlatConfig([
+    ...pluginVue.configs['flat/recommended']
+    {
+    languageOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+        globals: {
+            ...globals.browser,
+            ...globals.node
+        }
+    },
 
-	extends: ["plugin:vue/vue3-recommended", "@vue/airbnb"],
+	extends: ["@vue/airbnb"],
 
 	settings: {
 		"import/resolver": {
@@ -93,4 +99,5 @@ module.exports = {
 		__COMMIT_REF__: "readonly",
 		__REPOSITORY_URL__: "readonly",
 	},
-};
+}
+]);
