@@ -1,7 +1,7 @@
 {
 	"name": "@sunlabde/eslint-config-vuelab",
 	"repository": {
-		"url": "https://github.com/sunlabde/eslint-config-vuelab"
+		"url": "git+https://github.com/sunlabde/eslint-config-vuelab.git"
 	},
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
