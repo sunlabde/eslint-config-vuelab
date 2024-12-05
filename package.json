@@ -11,9 +11,7 @@
 	"main": "index.js",
 	"type": "module",
 	"files": [
-		"index.js",
-		"vite.js",
-		"vue-cli.js"
+		"index.js"
 	],
 	"scripts": {
 		"test": "",
@@ -28,19 +26,18 @@
 		"typescript": "^5.6.3"
 	},
 	"dependencies": {
-		"@eslint/json": "^0.8.0",
-		"@stylistic/eslint-plugin": "^2.11.0",
+		"@stylistic/eslint-plugin": "2.11.0",
 		"eslint": "9.16.0",
 		"eslint-import-resolver-typescript": "3.5.3",
 		"eslint-plugin-import": "2.31.0",
-		"eslint-plugin-jsonc": "^2.18.2",
+		"eslint-plugin-jsonc": "2.18.2",
 		"eslint-plugin-vue": "9.32.0",
 		"eslint-plugin-vuejs-accessibility": "2.4.1",
-		"globals": "^15.13.0",
+		"globals": "15.13.0",
 		"typescript-eslint": "8.17.0"
 	},
 	"devDependencies": {
-		"np": "8.0.0",
+		"np": "10.1.0",
 		"typescript": "5.6.3"
 	},
 	"engines": {

@@ -6,6 +6,7 @@ import tseslint from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
 import stylistic from '@stylistic/eslint-plugin';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
+import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 
 export default tseslint.config(
 	{
@@ -113,6 +114,7 @@ export default tseslint.config(
 
 		extends: [
 			pluginVue.configs['flat/recommended'],
+			pluginVueA11y.configs['flat/recommended'],
 		],
 
 		languageOptions: {
