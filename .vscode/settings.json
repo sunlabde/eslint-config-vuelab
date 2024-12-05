@@ -1,0 +1,5 @@
+{
+	"eslint.options": {
+		"overrideConfigFile": "F:/Git/eslint-config-vuelab/index.js"
+	}
+}
