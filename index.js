@@ -10,6 +10,12 @@ import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 
 export default tseslint.config(
 	{
+		ignores: [
+			'node_modules/*',
+			'dist/*',
+		],
+	},
+	{
 		plugins: {
 			'@stylistic': stylistic,
 		},
@@ -38,10 +44,6 @@ export default tseslint.config(
 				arrowParens: true,
 				braceStyle: '1tbs',
 			}),
-		],
-
-		ignores: [
-			'node_modules/*',
 		],
 
 		languageOptions: {
