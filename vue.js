@@ -31,6 +31,9 @@ export default tseslint.config(
 			'vue/component-name-in-template-casing': 'error',
 			'vue/match-component-file-name': 'error',
 			'vue/require-component-is': 0,
+			'vue/block-order': ['error', {
+				order: ['script', 'template', 'style'],
+			}],
 		},
 	},
 );
