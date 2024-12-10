@@ -1,9 +1,10 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import vueI18n from '@intlify/eslint-plugin-vue-i18n';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
 	{
+		name: 'vuelab/i18n',
+
 		files: ['**/*.{ts,vue}'],
 
 		extends: [

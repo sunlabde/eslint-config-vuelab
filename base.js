@@ -8,19 +8,17 @@ import eslintPluginJsonc from 'eslint-plugin-jsonc';
 
 export default tseslint.config(
 	{
+		name: 'vuelab/global-ignores',
 		ignores: [
 			'node_modules/*',
 			'dist/*',
 			'.nuxt/*',
 			'.ide/*',
+			'.github/*',
 		],
 	},
 	{
-		plugins: {
-			'@stylistic': stylistic,
-		},
-	},
-	{
+		name: 'vuelab/json',
 		files: ['**/*.json', 'package.json'],
 		ignores: ['package-lock.json'],
 		extends: [
@@ -31,7 +29,13 @@ export default tseslint.config(
 		},
 	},
 	{
+		name: 'vuelab/base',
+
 		files: ['**/*.js', '**/*.ts', '**/*.vue', '**/*.mjs'],
+
+		plugins: {
+			'@stylistic': stylistic,
+		},
 
 		extends: [
 			jseslint.configs.recommended,
@@ -66,26 +70,10 @@ export default tseslint.config(
 		},
 
 		rules: {
-			'no-unused-vars': 'off',
-			'@typescript-eslint/no-unused-vars': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-			'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-			'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-			'@stylistic/max-len': 0,
+			'no-console': 'warn',
+			'no-debugger': 'error',
 			'no-param-reassign': ['error', { props: false }],
-			'no-underscore-dangle': 0,
-			'no-plusplus': 0,
-			'import/prefer-default-export': 0,
-			'@stylistic/lines-between-class-members': [
-				'warn',
-				'always',
-				{
-					exceptAfterSingleLine: true,
-				},
-			],
 			'func-style': ['error', 'expression'],
-			'@typescript-eslint/explicit-module-boundary-types': 0,
-			'no-shadow': 'off',
-			'@typescript-eslint/no-shadow': 'error',
 			'import/extensions': [
 				'error',
 				'ignorePackages',
@@ -109,6 +97,8 @@ export default tseslint.config(
 					],
 				},
 			],
+			'@typescript-eslint/no-shadow': 'error',
+			'@typescript-eslint/explicit-module-boundary-types': 0,
 		},
 	},
 );

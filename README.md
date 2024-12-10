@@ -7,7 +7,7 @@
 This package contains the custom eslint config used by the Sunlab UX Team. Under the hood it uses the recommended rules from [eslint](https://eslint.org/docs/latest/rules/) and [vue](https://eslint.vuejs.org/rules/) with some custom additions. It can be used for raw js/ts projects as well as vue projects. It can also be used for nuxt projects.
 
 ## 🔧 How to use 
-### Prequesit
+### Prerequisite
 Since this package is hosted via the GitHub package registry you have to tell npm to use the correct registry. To do so, add the following to your `.nprmrc`
 
 #### Example `.npmrc`
@@ -35,7 +35,7 @@ import vuelab from '@sunlabde/eslint-config-vuelab';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-	vuelab.configs.base,
+	vuelab.configs.all,
 	vuelab.configs.vue,
 	vuelab.configs.i18n,
 );

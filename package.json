@@ -6,7 +6,7 @@
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
 	},
-	"version": "2.0.0-beta.5",
+	"version": "2.0.0-beta.6",
 	"description": "",
 	"main": "index.js",
 	"type": "module",
@@ -20,7 +20,7 @@
 	"scripts": {
 		"release": "np",
 		"debug": "eslint --debug -c index.js",
-		"inspect": "eslint --inspect-config -c index.js"
+		"inspect": "eslint --inspect-config"
 	},
 	"author": "thomas.brunner@sunlab.de",
 	"license": "ISC",

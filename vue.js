@@ -4,6 +4,8 @@ import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 
 export default tseslint.config(
 	{
+		name: 'vuelab/vue',
+
 		files: ['*.vue', '**/*.vue'],
 
 		extends: [
@@ -18,9 +20,9 @@ export default tseslint.config(
 		},
 
 		rules: {
-			'vue/html-indent': ['error', 'tab'],
+			'vue/html-indent': ['warn', 'tab'],
 			'vue/multiline-html-element-content-newline': [
-				'error',
+				'warn',
 				{
 					ignoreWhenEmpty: true,
 					ignores: ['pre', 'textarea'],
@@ -30,17 +32,15 @@ export default tseslint.config(
 			'vue/camelcase': ['error', { allow: ['alpha_spaces'] }],
 			'vue/component-name-in-template-casing': 'error',
 			'vue/match-component-file-name': 'error',
-			'vue/require-component-is': 0,
 			'vue/block-order': ['error', {
 				order: ['script', 'template', 'style'],
 			}],
 			'vue/component-api-style': 'error',
-			'vue/component-name-in-template-casing': 'error',
 			'vue/define-emits-declaration': 'error',
-			'vue/define-macros-order': 'error',
-			'vue/define-props-declaration': ['error'],
+			'vue/define-macros-order': 'warn',
+			'vue/define-props-declaration': 'error',
 			'vue/no-required-prop-with-default': 'error',
-			'vue/padding-line-between-blocks': 'error',
+			'vue/padding-line-between-blocks': 'warn',
 		},
 	},
 );
