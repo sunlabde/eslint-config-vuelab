@@ -4,7 +4,7 @@
 
 # @sunlabde/eslint-config-vuelab
 
-This package contains the custom eslint config used by the Sunlab UX Team. Under the hood it uses the recommended rules from [eslint](https://eslint.org/docs/latest/rules/) and [vue](https://eslint.vuejs.org/rules/) with some custom additions. It can be used for raw js/ts projects as well as vue projects. It can also be used for nuxt projects but it is not completely ready for it yet.
+This package contains the custom eslint config used by the Sunlab UX Team. Under the hood it uses the recommended rules from [eslint](https://eslint.org/docs/latest/rules/) and [vue](https://eslint.vuejs.org/rules/) with some custom additions. It can be used for raw js/ts projects as well as vue projects. It can also be used for nuxt projects.
 
 ## 🔧 How to use 
 ### Prequesit
@@ -26,16 +26,31 @@ Please note that this config required you to use ESLint v9. This package exports
 - `base` – The core rules for raw js/ts projects
 - `vue` – For vue projects
 - `i18n` – For vue projects using i18n
+- `nuxt` – For nuxt projects
 - `all` – A combined export with `base`, `vue` and `i18n`
 
-#### Example `eslint.config.js`
+### Example `eslint.config.js`
 ```js
 import vuelab from '@sunlabde/eslint-config-vuelab';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
 	vuelab.configs.base,
+	vuelab.configs.vue,
 	vuelab.configs.i18n,
+);
+```
+
+### Working with nuxt
+Nuxt needs some special treatment so we need to add an additional config to nuxt project. You should use the nuxt config alongside with the vue config. The nuxt config is only a addition to vue, not a standalone config.
+```js
+import vuelab from '@sunlabde/eslint-config-vuelab';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+	vuelab.configs.base,
+	vuelab.configs.vue,
+	vuelab.configs.nuxt,
 );
 ```
 

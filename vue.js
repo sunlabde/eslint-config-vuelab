@@ -34,6 +34,13 @@ export default tseslint.config(
 			'vue/block-order': ['error', {
 				order: ['script', 'template', 'style'],
 			}],
+			'vue/component-api-style': 'error',
+			'vue/component-name-in-template-casing': 'error',
+			'vue/define-emits-declaration': 'error',
+			'vue/define-macros-order': 'error',
+			'vue/define-props-declaration': ['error'],
+			'vue/no-required-prop-with-default': 'error',
+			'vue/padding-line-between-blocks': 'error',
 		},
 	},
 );
