@@ -17,7 +17,7 @@ Since this package is hosted via the GitHub package registry you have to tell np
 
 ## Install
 ```
-pnpm install @sunlabde/eslint-config-vuelab -D
+pnpm install @sunlabde/eslint-config-vuelab eslint typescript-eslint -D
 ```
 
 ## Extend your ESLint config
