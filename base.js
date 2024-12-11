@@ -101,4 +101,22 @@ export default tseslint.config(
 			'@typescript-eslint/explicit-module-boundary-types': 0,
 		},
 	},
+    {
+        /**
+         * Explicity disable some rules for server environment
+         */
+
+        name: 'vuelab/base/server',
+
+		files: [
+            'server/**/*.ts',
+            'server/**/*.js',
+            'netlify/**/*.ts',
+            'netlify/**/*.js',
+        ],
+
+        rules: {
+            'no-console': 'off'
+        }
+    }
 );
