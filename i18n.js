@@ -27,7 +27,7 @@ export default tseslint.config(
 					attributes: {
 						'/.+/': ['label', 'title', 'description'],
 					},
-					ignorePattern: '^[-#:()&%*/·,?|]+$',
+					ignorePattern: '^[-#:()&%*/·,?|"+x]+$',
 				},
 			],
 		},
