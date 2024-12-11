@@ -21,6 +21,7 @@ export default tseslint.config(
 			'@intlify/vue-i18n/no-missing-keys': 'error',
 			'@intlify/vue-i18n/no-missing-keys-in-other-locales': 'error',
 			'@intlify/vue-i18n/no-unused-keys': 'error',
+            '@intlify/vue-i18n/no-dynamic-keys': 'error',
 			'@intlify/vue-i18n/no-raw-text': [
 				'warn',
 				{
