@@ -35,7 +35,7 @@ export default tseslint.config(
 			'vue/block-order': ['error', {
 				order: ['script', 'template', 'style'],
 			}],
-			'vue/component-api-style': 'error',
+			'vue/component-api-style': ['error', ['script-setup']],
 			'vue/define-emits-declaration': 'error',
 			'vue/define-macros-order': 'warn',
 			'vue/define-props-declaration': 'error',
