@@ -2,10 +2,16 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
 	{
-		name: 'vuelab/nuxt/disables/routes',
-		files: ['pages/**/*.vue', 'layouts/**/*.vue'],
+		name: 'vuelab/nuxt/disables',
 		rules: {
 			'vue/multi-word-component-names': 'off',
+		},
+	},
+	{
+		name: 'vuelab/nuxt/base',
+		files: ['components/**/*.vue'],
+		rules: {
+			'vue/multi-word-component-names': 'error',
 		},
 	},
 	{
