@@ -15,6 +15,8 @@ export default tseslint.config(
 			'.nuxt/*',
 			'.ide/*',
 			'.github/*',
+			'.nitro/*',
+			'.output/*',
 		],
 	},
 	{
@@ -41,6 +43,7 @@ export default tseslint.config(
 			jseslint.configs.recommended,
 			tseslint.configs.recommended,
 			importPlugin.flatConfigs.recommended,
+			importPlugin.flatConfigs.typescript,
 			stylistic.configs.customize({
 				indent: 'tab',
 				quotes: 'single',
@@ -74,6 +77,13 @@ export default tseslint.config(
 			'no-debugger': 'error',
 			'no-param-reassign': ['error', { props: false }],
 			'func-style': ['error', 'expression'],
+			'import/first': 'error',
+			'import/no-duplicates': 'error',
+			'import/no-mutable-exports': 'error',
+			'import/no-named-default': 'error',
+			'import/no-self-import': 'error',
+			'import/order': 'error',
+			'import/newline-after-import': ['error', { count: 1 }],
 			'import/extensions': [
 				'error',
 				'ignorePackages',
@@ -94,6 +104,7 @@ export default tseslint.config(
 						'**/*.spec.ts',
 						'*.config.js',
 						'*.config.ts',
+						'*.config.mjs',
 					],
 				},
 			],
@@ -101,22 +112,22 @@ export default tseslint.config(
 			'@typescript-eslint/explicit-module-boundary-types': 0,
 		},
 	},
-    {
-        /**
+	{
+		/**
          * Explicity disable some rules for server environment
          */
 
-        name: 'vuelab/base/server',
+		name: 'vuelab/base/server',
 
 		files: [
-            'server/**/*.ts',
-            'server/**/*.js',
-            'netlify/**/*.ts',
-            'netlify/**/*.js',
-        ],
+			'server/**/*.ts',
+			'server/**/*.js',
+			'netlify/**/*.ts',
+			'netlify/**/*.js',
+		],
 
-        rules: {
-            'no-console': 'off'
-        }
-    }
+		rules: {
+			'no-console': 'off',
+		},
+	},
 );

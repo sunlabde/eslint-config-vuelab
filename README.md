@@ -54,6 +54,35 @@ export default tseslint.config(
 );
 ```
 
+#### Using the nuxt eslint module (recommended)
+You can also use the nuxt eslint module as it adds some additional features explicitly for nuxt.
+
+```js
+import vuelab from '@sunlabde/eslint-config-vuelab';
+import { withNuxt } from './.nuxt/eslint.config.mjs';
+
+export default withNuxt(
+	vuelab.configs.all,
+	vuelab.configs.nuxt,
+);
+```
+
+Also make sure to disable standalone in the `nuxt.config.js`
+
+```js
+export default defineNuxtConfig({
+	modules: [
+		'@nuxt/eslint',
+	],
+
+	eslint: {
+		config: {
+			standalone: false,
+		},
+	},
+});
+```
+
 ## 💡 Contribute
 If you want to add new rules we should follow in our Sunlab UX projects, feel free to add those rules to the config. To do so, you just have to apply your changes, commit them and run `pnpm release`. Follow the instructions and it will then create a new version of this package.
 
