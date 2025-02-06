@@ -32,7 +32,7 @@
         "eslint-import-resolver-typescript": "^3.5.3",
         "eslint-plugin-import": "^2.27.4",
         "eslint-plugin-vue": "^9.8.0",
-        "eslint-plugin-vuejs-accessibility": "^2.0.0"
+        "eslint-plugin-vuejs-accessibility": "^2.4.1"
     },
     "devDependencies": {
         "eslint": "^8.31.0",
