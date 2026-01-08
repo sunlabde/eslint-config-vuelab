@@ -21,7 +21,7 @@
     "author": "thomas.brunner@sunlab.de",
     "license": "ISC",
     "peerDependencies": {
-        "eslint": "^8.16.0",
+        "eslint": "^8.16.0 || ^9.0.0",
         "typescript": "^5.0.0"
     },
     "dependencies": {
@@ -35,7 +35,7 @@
         "eslint-plugin-vuejs-accessibility": "^2.0.0"
     },
     "devDependencies": {
-        "eslint": "^8.31.0",
+        "eslint": "^9.0.0",
         "np": "^8.0.0",
         "typescript": "^5.0.0"
     },
