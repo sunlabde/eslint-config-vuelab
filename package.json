@@ -32,7 +32,7 @@
 		"@intlify/eslint-plugin-vue-i18n": "3.2.0",
 		"@stylistic/eslint-plugin": "2.11.0",
 		"eslint": "9.16.0",
-		"eslint-import-resolver-typescript": "3.5.3",
+		"eslint-import-resolver-typescript": "4.4.4",
 		"eslint-plugin-import": "2.31.0",
 		"eslint-plugin-jsonc": "2.18.2",
 		"eslint-plugin-vue": "9.32.0",
