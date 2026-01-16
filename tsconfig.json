@@ -1,0 +1,6 @@
+{
+	"include": ["index.js", "*.vue"],
+	"compilerOptions": {
+		"allowJs": true
+	}
+}
